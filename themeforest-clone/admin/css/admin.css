@@ -1,0 +1,66 @@
+/* Admin Dashboard Styles */
+.sidebar {
+    min-height: 100vh;
+    background-color: #212529;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.sidebar .nav-link i {
+    margin-right: 4px;
+}
+
+/* Main content area */
+main {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Stats cards */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-body i {
+    opacity: 0.8;
+}
+
+/* Tables */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.table th {
+    font-weight: 600;
+    border-top: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+    main {
+        padding-top: 1.5rem;
+    }
+}
